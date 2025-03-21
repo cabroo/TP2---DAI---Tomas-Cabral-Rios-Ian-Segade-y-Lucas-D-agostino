@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <script>
-        window.onload = function() {generarNumeroAleatorio()}
+        window.onload = function() {inciarJuego()}
+
+        document.getElementById("NumI").addEventListener("keydown", function(event) {if (event.key === "Enter") {comprobar();}});
     </script>
-    
+      
     <h1>Nivelacion JS</h1>
     <form class="formNum">
         <label for="NumI">Ingrese su número</label>
         <input class="inputdatos" type="number" name="NumI" id="NumI">
         <button type="button" onclick="comprobar()">Calcular promedio</button>    
     </form>
+
+    <script src="script.js"></script>
+    <div id="contador"> <h1> </h1></div>
 </body>
 </html>
